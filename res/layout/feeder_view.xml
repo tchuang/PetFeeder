@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+    
+    <LinearLayout
+        android:id="@+id/share_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="4dp"
+	        android:text="@string/arduino"
+	        android:textSize="18sp" />
+	    
+	    <TextView
+	        android:id="@+id/arduino_status_msg"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="3dp"
+	        android:text="@string/arduino_status_offline"
+	        android:textSize="14sp" />
+	    
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dip"
+	        android:background="#cccccc" />
+	    
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="4dp"
+	        android:text="@string/twitter"
+	        android:textSize="18sp" />
+	    
+	    <TextView
+	        android:id="@+id/twitter_status_msg"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="3dp"
+	        android:text="@string/twitter_status_logout"
+	        android:textSize="14sp" />
+	    
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dip"
+	        android:background="#cccccc" />
+	    
+		<Button
+		    android:id="@+id/start_service_btn"
+		    style="@style/btnStyleBlue"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="2dp"
+		    android:layout_marginTop="5dp"
+		    android:text="@string/start_service_btn" />
+		
+		<Button
+	        android:id="@+id/stop_service_btn"
+	        style="@style/btnStyleOrange"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="2dp"
+		    android:layout_marginTop="5dp"
+	        android:text="@string/stop_service_btn" 
+	        android:visibility="gone" />
+		
+		<TextView
+	        android:id="@+id/service_status_msg"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="3dp"
+	        android:textSize="14sp" />
+		
+		<View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dip"
+	        android:background="#cccccc" />
+		
+		<Button
+		    android:id="@+id/manual_feed_btn"
+		    style="@style/btnStyleBlack"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="5dp"
+		    android:layout_marginTop="5dp"
+		    android:text="@string/manual_feed_btn" />
+		
+		<Button
+		    android:id="@+id/activate_motion_service_btn"
+		    style="@style/btnStyleBlack"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="5dp"
+		    android:text="@string/activate_motion_service_btn" />
+		
+		<Button
+		    android:id="@+id/start_listen_btn"
+		    style="@style/btnStyleBlack"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="5dp"
+		    android:text="@string/start_listen_btn" />
+		
+		<Button
+		    android:id="@+id/stop_listen_btn"
+		    style="@style/btnStyleBlack"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="5dp"
+		    android:text="@string/stop_listen_btn" />
+		
+		<TextView
+	        android:id="@+id/sensor_status_msg"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="8dp"
+	        android:textSize="14sp" />
+	
+	</LinearLayout>
+	
+    <TextView
+	        android:id="@+id/system_status_msg"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="8dp"
+	        android:textSize="15sp" 
+	        android:background="#eeeeee" />
+
+</LinearLayout>
